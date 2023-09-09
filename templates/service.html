@@ -1,0 +1,356 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SK_fitness club</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets//img/favicon.jpeg" rel="icon">
+  <link href="static/assets//img/apple-touch-icon.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets//vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets//vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets//vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets//vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets//vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets//vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets//vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets//css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="p-3 mb-2 bg-dark text-dark">
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        
+        <a href="https://www.facebook.com/biz/gym/?place_id=111286882234803" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/gymmotivation/" class="instagram"><i class="bi bi-instagram"></i></a>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+       
+        
+          
+          <div class="client-logo">
+          <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item"><img src="static/assets//img/favicon.jpeg" class="img-fluid" alt=""></li>
+            <li class="list-group-item"><h4 class="text-light"><a href="http://127.0.0.1:8000/">sk fitness </a></h4></li>
+          </ul>
+        </div>
+         <!-- <a href="index.html"><img src="static/assets//img/logo.jpeg" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a class="nav-link scrollto " href="/gallery">Gallery</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/service">Services</a></li>
+         
+         
+          <li><a href="/blog">Blog</a></li>
+       
+          
+
+
+
+          <li><a href="/contact">Contact</a></li>
+          {% if not request.user.is_authanticated %}
+
+         
+        
+          <li class="dropdown"><a href="#"><span>Membership</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/join">Enroll</a></li>
+              <li><a href="/attendance">Attendance</a></li>
+            
+             
+              <li><a href="/profile">View profile </a></li>
+            </ul>
+          </li>
+          
+
+          <li><a class="nav-link scrollto" href="/login">logIn</a></li>
+          <li><a class="nav-link scrollto" href="/logout">logout</a></li>
+
+         
+
+          
+          
+          
+
+          {% endif %}
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      
+
+
+      
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    
+ 
+   
+
+    <!-- ======= Our Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        
+          <div class="row g-0 bg-body-secondary position-relative">
+            <div class="col-md-6 mb-md-0 p-md-4">
+              <img src="https://t4.ftcdn.net/jpg/03/17/72/47/360_F_317724775_qHtWjnT8YbRdFNIuq5PWsSYypRhOmalS.jpg" class="w-100" alt="...">
+            </div>
+            <div class="col-md-6 p-4 ps-md-0">
+              <h5 >  Dumbbells : </h5>
+             
+ <p>greatest part about dumbbells is that they range in various shapes, sizes, weights and materials. Before buying, consider factors such as price, storage space required and your fitness goals and levels.
+  You can purchase individual, a set, or adjustable weight dumbbells, and based on your preference and fitness needs, you can help determine which type of dumbbells you should buy. 
+            </p>  </div>
+          </div>
+
+          </div>
+
+           <!-- ======= Our Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        
+          <div class="row g-0 bg-body-secondary position-relative">
+            <div class="col-md-6 mb-md-0 p-md-4">
+              <h5 >SPINNING STUDIO: </h5>
+              <p>DWhether you are a seasoned spinner, an avid road biker or just eager to test out a class for the first time, Klub20 spinning has you covered! Our spacious spin room is equipped with 40 spin bikes making it easy to cater to everyone’s indoor cycling needs. Our diverse class schedule offers 6am classes for the early morning  bird, noon classes to those looking to take advantage of an indoor ride on their lunch break, and those looking to let lose after a long day of work.  The environment in a spin class in unbeatable! The instructors have a gift of creating a high-energy atmosphere allowing you to get lost in the climbs and the long strips of road.
+</p>>
+                <a href="#" class="stretched-link">Go somewhere</a> </div>
+            <div class="col-md-6 p-4 ps-md-0">
+              <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-100" alt="...">
+           
+            </div>
+          </div>
+
+          </div>
+
+
+      <!-- ======= Our Clients Section ======= -->
+      <section id="clients" class="clients">
+        <div class="container">
+  
+          
+            <div class="row g-0 bg-body-secondary position-relative">
+              <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-100" alt="...">
+              </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <h5 >PERSONAL TRAINING: </h5>
+                <p>our personal trainers are here to help all members seeking to make the most out of their workouts. A personal trainer can help you establish a timeline for realistic goals and break them down into smaller components. They are very friendly, knowledgeable and highly motivated in helping you achieve your fitness goals. On your first session, you can expect to share a little bit about yourself, your medical history and what your lifestyle consists of. Personal training is the best form of adapted training because your experience has been catered for you! You will have individualized attention from your trainer which has proven to be the most effective and efficient way to reach your fitness goals. Our personal trainers will coach you through your sessions with a positive attitude, providing consistent feedback and challenge you.
+
+                  They will motivate you to keep coming and to keep pushing. 
+                 </p>> <a href="#" class="stretched-link">Go somewhere</a>
+              </div>
+            </div>
+  
+            </div>
+  
+             <!-- ======= Our Clients Section ======= -->
+             <section id="clients" class="clients">
+              <div class="container">
+        
+                
+                  <div class="row g-0 bg-body-secondary position-relative">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                      <h5 >YOGA CLASSES: </h5>
+                      <p>we understand that life can get busy and tiring. That is why we have so many different classes available to you from sun rise to sun set. In the recent years, yoga has gained a huge following and has increased in popularity. Many people are starting to practice yoga and are seeing the great physical and mental benefits. Yoga practice is a great way to strengthen the bond between your mind and your body. It is also a great way to learn to appreciate your body and its abilities. Our bodies carry us throughout the day, and yoga is about creating the opportunity to focus on our breathing, stretching and developing mindfulness.
+
+                        A simple yoga practice can increase your levels of concentration, alleviate symptoms of anxiety, help you sleep better at time, and over time, regain mobility, flexibility and range of motion.
+                        </p>><a href="#" class="stretched-link">Go somewhere</a> </div>
+              <div class="col-md-6 p-4 ps-md-0">
+                <img src="https://images.pexels.com/photos/917653/pexels-photo-917653.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-100" alt="...">
+              
+              
+              </div>
+            </div>
+  
+            </div>
+  
+
+           
+    
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-white" >
+            <div  data-aos="fade-up">
+              <div class="client-images">
+                <img src="https://keralakaumudi.com/web-news/en/2020/05/NMAN0145588/image/gym.1.598732.jpg" class="img-fluid" alt="">
+              </div>
+              <h4 class="title"><a href="">Mayur Abnave</a></h4>
+              <p class="description"> It's a very nice gym with world top class equipment of Life fitness and Hammer Strength.</p>
+                </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-white" >
+            <div  data-aos="fade-up" data-aos-delay="100">
+              <div class="client-images">
+                <img src="https://images.pexels.com/photos/841128/pexels-photo-841128.jpeg?auto=compress&cs=tinysrgb&w=600"class="img-fluid" alt="">
+              </div>
+              <h4 class="title"><a href=""> Utkrisht Kaushik
+              </a></h4>
+              <p class="description"> So this place is more than just a gym. They have great programs such as kickboxing, yoga, Zumba etc that you can opt for to change the routine once in a while.</p></div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 text-white" >
+            <div  data-aos="fade-up" data-aos-delay="100">
+              <div class="client-images">
+               <img src="https://images.pexels.com/photos/1756959/pexels-photo-1756959.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="">
+              </div>
+              <h4 class="title"><a href=""> Utkrisht Kaushik
+              </a></h4>
+              <p class="description"> So this place is more than just a gym. They have great programs such as kickboxing, yoga, Zumba etc that you can opt for to change the routine once in a while.</p></div>
+          </div>
+          
+           
+          <div class="col-lg-4 col-md-6 text-white" >
+            <div  data-aos="fade-up" data-aos-delay="200">
+              <div class="client-images">
+                <img src="https://images.pexels.com/photos/371049/pexels-photo-371049.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="">
+              </div>
+              <h4 class="title"><a href="">
+                Pradip Andhale</a></h4>
+              <p class="description">Hands down, best choice I've made training at Gold's Gym. VERY friendly team who make me actually want to go train.  </p></div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-white" >
+            <div data-aos="fade-up" data-aos-delay="300">
+              <div class="client-images">
+                <img src="https://images.pexels.com/photos/1480520/pexels-photo-1480520.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="">
+              </div>
+              <h4 class="title"><a href="">Ela Sharda </a></h4>
+              <p class="description"> Their trainers are exceptional, the overall vibe is great and I have had nothing but good experience.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-white" >
+            <div  data-aos="fade-up" data-aos-delay="400">
+              <div class="client-images">
+                <img src="https://images.pexels.com/photos/3253501/pexels-photo-3253501.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="">
+              </div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">One of the best gyms to start your workout journey with. A very well managed Gym. Good staff. Good knowledge trainers. </p></div>   </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Sk Fitness Club</h3>
+            <p>
+               90FT STREET,
+              SION DHARAVI, <br>
+              MUMBAI , MH400017<br>
+              INDIA. <br><br>
+              <strong>Phone:</strong>8850687780<br>
+              <strong>Email:</strong> SkFitnessClub@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+             
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          
+
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Sk Fitness Club</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          
+          
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        
+        <a href="https://www.facebook.com/biz/gym/?place_id=111286882234803" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/gymmotivation/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+       
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets//vendor/aos/aos.js"></script>
+  <script src="static/assets//vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets//vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets//vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets//vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets//vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="static/assets//vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets//js/main.js"></script>
+
+</body>
+
+</html>

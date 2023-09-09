@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}
+View profile
+{% endblock title %}
+{% block head %}
+
+<h1>profile</h1>
+
+
+<div class="container mt-15">
+
+    <div class="cols">
+    
+    <div class="col-md-2"> </div>
+    
+    <div class="col-md-16">
+    
+    
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+      <strong></strong> {{message}}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    
+    {% comment %} Contact Us COde  {% endcomment %}
+   
+   
+      {% for post in posts %}
+      
+        
+      <ul class="list-group-horizontal-sm">
+        <li ><h5>Name : {{post.FullName}}</h5></li>
+        <li ><h5>Email : {{post.Email}}</h5></li>
+        <li><h5>PhoneNumber : {{post.PhoneNumber}}</h5></li>
+       
+        <li ><h5>Membership plan : {{post.SelectMembershipplan}}</h5></li>
+        <li ><h5>Trainer : {{post.SelectTrainer}}</h5></li>
+         <li ><h5>Payment Status : {{post.paymentStatus}}</h5></li>
+        
+        
+      </ul>
+      
+    {% endfor %}
+    </div>
+    
+ 
+    
+    </div>
+    
+    
+    
+    </div>
+
+
+
+
+{% endblock head %}
